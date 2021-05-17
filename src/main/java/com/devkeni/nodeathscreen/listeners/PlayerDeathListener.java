@@ -2,12 +2,13 @@ package com.devkeni.nodeathscreen.listeners;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 
 public class PlayerDeathListener implements Listener {
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.MONITOR)
     public void onDeath(PlayerDeathEvent event) {
         if (event.getEntity() == null) return;
         Player player = event.getEntity().getPlayer();

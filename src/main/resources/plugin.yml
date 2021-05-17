@@ -1,5 +1,5 @@
 name: NoDeathScreen
 description: "Auto respawn players when death."
-version: 1.0.0
+version: 1.0.1
 author: DevKeni
 main: com.devkeni.nodeathscreen.NoDeathScreen
